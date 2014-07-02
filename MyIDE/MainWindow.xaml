@@ -1,8 +1,11 @@
-﻿<RibbonWindow x:Name="MainFrame" x:Class="MyIDE.MainWindow"
+﻿<RibbonWindow 
+        x:Name="rwWindowRoot" 
+        x:Class="MyIDE.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    
+    <Grid Name="gdLayoutRoot">
         <Ribbon>
             <RibbonTab Header="檔案">
                 <RibbonGroup>
@@ -17,5 +20,14 @@
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>
+
+        <TextBox 
+            Name="tbEditRegion"
+            Margin="0,134,0,0" 
+            AcceptsTab="True" 
+            AcceptsReturn="True"
+            TextWrapping="Wrap">
+        </TextBox>
+
     </Grid>
 </RibbonWindow>
