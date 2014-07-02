@@ -1,13 +1,13 @@
-﻿<RibbonWindow x:Class="MyIDE.MainWindow"
+﻿<RibbonWindow x:Name="MainFrame" x:Class="MyIDE.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Ribbon>
             <RibbonTab Header="檔案">
-                <RibbonGroup >
-                    <RibbonButton Label="開檔"></RibbonButton>
-                    <RibbonButton Label="存檔"></RibbonButton>
+                <RibbonGroup>
+                    <RibbonButton Label="開檔" Click="OpenClick"></RibbonButton>
+                    <RibbonButton Label="存檔" Click="SaveClick"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="編輯">

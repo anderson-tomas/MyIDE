@@ -20,9 +20,24 @@ namespace MyIDE
     /// </summary>
     public partial class MainWindow : System.Windows.Controls.Ribbon.RibbonWindow
     {
+        TextBlock textBlock1 = new TextBlock();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void OpenClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Background = new SolidColorBrush(Colors.Blue);
+            //textBlock1.Text = "asd";
+            //MainFrame.AddChild(textBlock1);
+        }
+
+        private void SaveClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Background = new SolidColorBrush(Colors.White);
+        }
+
     }
 }
