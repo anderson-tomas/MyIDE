@@ -9,8 +9,8 @@
         <Ribbon>
             <RibbonTab Header="檔案">
                 <RibbonGroup>
-                    <RibbonButton Label="開檔" Click="OpenClick"></RibbonButton>
-                    <RibbonButton Label="存檔" Click="SaveClick"></RibbonButton>
+                    <RibbonButton Label="開檔" Click="OpenvClick"></RibbonButton>
+                    <RibbonButton Label="存檔" Click="SavevClick"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="編輯">
